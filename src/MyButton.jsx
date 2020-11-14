@@ -18,12 +18,8 @@ export default class MyButton extends React.Component {
 
         if (this.state.color === 'primary' && this.state.liked === false) {
             this.setState({ liked: true, color: 'secondary' });
-            console.log(this.state.liked); //why does this print out the old state 
-            console.log(this.state.color);
         } else {
             this.setState({ liked: false, color: 'primary' });
-            console.log(this.state.liked);
-            console.log(this.state.color);
         }
     }
 
